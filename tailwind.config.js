@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       colors: {
         'honeydew': '#DFF1E5',
-        'aquamarine': '#01FCC0'
+        'aquamarine': '#01FCC0',
+        'jade': '#47A966'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
