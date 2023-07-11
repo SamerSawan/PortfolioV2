@@ -8,8 +8,8 @@ const IconButton = ({ href, icon}) => {
     };
 
     return (
-        <button onClick={handleClick}>
-            <FontAwesomeIcon className='ml-5' icon={icon} size='lg' style={{color: "#01fcc0",}}/>   
+        <button className="ml-5" onClick={handleClick}>
+            <FontAwesomeIcon  icon={icon} size='lg' style={{color: "#01fcc0",}}/>   
         </button>
     )
 }

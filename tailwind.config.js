@@ -12,6 +12,7 @@ module.exports = {
         'aquamarine': '#01FCC0',
         'jade': '#47A966',
         'darkgreen': '#0F2416',
+        'emerald': '#52B772'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
