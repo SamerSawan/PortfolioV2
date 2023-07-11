@@ -5,13 +5,21 @@ import CallToAction from "./components/Hero/CallToAction";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faServer } from "@fortawesome/free-solid-svg-icons";
 import Highlight from "./components/ui/Highlight";
+import Job from "./components/Experience/Job";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-24">
+    <main className="min-h-screen p-12">
+      {/* Nav */}
+      <div className="text-honeydew flex justify-end">
+        <span className="my-2 mx-8">About</span>
+        <span className="my-2 mx-8">Experience</span>
+        <span className="my-2 mx-8">Projects</span>
+      </div>
+
       {/*Hero + About*/}
       <div className="flex justify-center">
-        <div className="flex w-8/12 items-center justify-center">
+        <div className="flex w-8/12 min-w-min items-center justify-center">
           <div className="mt-20 w-3/5">
             <HeroText />
             <ButtonContainer />
@@ -37,6 +45,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       {/*Tools and Tech Title + highlights*/}
       <div className="flex justify-center">
         <div className="text-emerald text-2xl mt-20 font-semibold">
@@ -83,6 +92,20 @@ export default function Home() {
             <Highlight text={"Docker"} />
           </div>
         </div>
+      </div>
+
+      {/* Experience */}
+      <div className="flex justify-center text-emerald text-4xl font-bold mt-52">
+        Experience
+      </div>
+      <Job />
+
+      {/* Projects */}
+      <div className="flex justify-center text-emerald text-4xl font-bold mt-52">
+        Projects
+      </div>
+      <div>
+        
       </div>
     </main>
   );
