@@ -2,13 +2,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
-const IconButton = ({ href, icon}) => {
-    const handleClick = () => {
-        window.open(href, "_blank", "noreferrer")
-    };
+const IconButton = ({ href, icon, onClick}) => {
 
     return (
-        <button className="ml-5" onClick={handleClick}>
+        <button className="ml-5" onClick={onClick}>
             <FontAwesomeIcon  icon={icon} size='lg' style={{color: "#01fcc0",}}/>   
         </button>
     )

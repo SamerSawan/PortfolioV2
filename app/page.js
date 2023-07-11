@@ -167,6 +167,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <div className="flex justify-center mt-20 text-honeydew">
+        Created by Samer Sawan using Next.js and TailwindCSS
+      </div>
+      
     </main>
   );
 }
