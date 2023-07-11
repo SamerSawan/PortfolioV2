@@ -23,7 +23,6 @@ const CallToAction = () => {
         icon={faLinkedin}
         onClick={handleClick}
       />
-      {/*TODO: ADD CONTACT FORUM OR HREF THAT OPENS MAIL APP */}
       <a href='mailto:samersawan123@gmail.com'>
         <IconButton icon={faEnvelope} />
       </a>
