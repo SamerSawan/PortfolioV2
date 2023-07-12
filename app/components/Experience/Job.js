@@ -2,10 +2,10 @@ const Job = () => {
   return (
     <div className="flex justify-center">
       <div className="bg-darkgreen w-164 py-5 px-5 mt-10 rounded-lg">
-        <div className="text-honeydew text-2xl">
+        <div className="text-honeydew text-lg lg:text-2xl">
           Specialist @ <span className="text-aquamarine">Apple</span>
         </div>
-        <div className="text-honeydew">
+        <div className="text-honeydew text-sm lg:text-base">
           • Consistently achieved top performance amongst peers by exceeding
           AppleCare and Activation targets by{" "}
           <span className="text-aquamarine">20%</span> for{" "}

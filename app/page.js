@@ -17,23 +17,24 @@ import ProjectCard from "./components/Projects/ProjectCard";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-12">
+    <main className="min-h-screen p-12 overflow-hidden">
       {/* Nav */}
-      <div className="text-honeydew flex justify-end">
-        <span className="my-2 mx-8">About</span>
-        <span className="my-2 mx-8">Experience</span>
-        <span className="my-2 mx-8">Projects</span>
+      <div className="text-honeydew text-sm lg:text-base flex justify-end">
+        {/*TODO: HAMBURGER MENU*/}
+        <span className="my-1 mx-3 lg:my-2 lg:mx-8">About</span>
+        <span className="my-1 mx-3 lg:my-2 lg:mx-8">Experience</span>
+        <span className="my-1 mx-3 lg:my-2 lg:mx-8">Projects</span>
       </div>
 
       {/*Hero + About*/}
       <div className="flex justify-center">
-        <div className="flex w-8/12 min-w-min items-center justify-center">
-          <div className="mt-20 w-3/5">
+        <div className="flex flex-col lg:flex-row lg:w-8/12 min-w-min items-center justify-center">
+          <div className="flex flex-col justify-center mt-20 lg:w-3/5">
             <HeroText />
             <ButtonContainer />
             <CallToAction />
           </div>
-          <div className="bg-darkgreen text-honeydew text-lg rounded-lg w-150 py-3 px-6 mt-16">
+          <div className="bg-darkgreen text-honeydew text-sm lg:text-lg rounded-lg lg:w-150 py-3 px-6 mt-16">
             <p>
               My journey began in my senior year in high school where I built a
               simple brick breaker game using Unity and C#. Since then, I’ve
@@ -56,21 +57,21 @@ export default function Home() {
 
       {/*Tools and Tech Title + highlights*/}
       <div className="flex justify-center">
-        <div className="text-emerald text-2xl mt-20 font-semibold">
+        <div className="text-emerald text-xl lg:text-2xl mt-20 font-semibold">
           Some languages and tools I like to use
         </div>
       </div>
-      <div className="flex flex-row justify-center space-x-96 mt-10">
+      <div className="flex flex-col lg:flex-row justify-center lg:space-x-96 mt-10">
         <div>
-          <div className="ml-28">
+          <div className="text-center lg:text-xl lg:ml-28">
             <FontAwesomeIcon
               icon={faCode}
-              size="xl"
+              size="lg"
               style={{ color: "#01fcc0" }}
             />
-            <span className="text-aquamarine text-xl ml-4">Languages</span>
+            <span className="text-aquamarine ml-4">Languages</span>
           </div>
-          <div className="grid grid-cols-3 mt-5">
+          <div className="grid grid-cols-2 lg:grid-cols-3 my-5">
             <Highlight text={"Java"} />
             <Highlight text={"Python"} />
             <Highlight text={"C"} />
@@ -80,15 +81,15 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className="ml-28">
+          <div className="text-center lg:text-xl lg:ml-28">
             <FontAwesomeIcon
               icon={faServer}
               size="xl"
               style={{ color: "#01fcc0" }}
             />
-            <span className="text-aquamarine text-xl ml-4">Tools and Tech</span>
+            <span className="text-aquamarine ml-4">Tools and Tech</span>
           </div>
-          <div className="grid grid-cols-3 mt-5">
+          <div className="grid grid-cols-2 lg:grid-cols-3 mt-5">
             <Highlight text={"React"} />
             <Highlight text={"React Native"} />
             <Highlight text={"JUnit"} />
@@ -103,18 +104,18 @@ export default function Home() {
       </div>
 
       {/* Experience */}
-      <div className="flex justify-center text-emerald text-4xl font-bold mt-52">
+      <div className="flex justify-center text-emerald text-xl lg:text-4xl font-bold mt-24 lg:mt-52">
         Experience
       </div>
       <Job />
 
       {/* Projects */}
-      <div className="flex justify-center text-emerald text-4xl font-bold mt-52">
+      <div className="flex justify-center text-emerald text-xl lg:text-4xl font-bold mt-52">
         Projects
       </div>
       <div className="flex flex-col">
         <div className="flex justify-center">
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-1 lg:grid-cols-3">
             <ProjectCard
               text={"Splendor"}
               description={
@@ -145,7 +146,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
             <ProjectCard
               text={"Twitter Scraper"}
               description={

@@ -11,7 +11,7 @@ const CallToAction = () => {
     };
 
   return (
-    <div className="text-honeydew text-2xl mt-10 ml-12 w-50">
+    <div className="text-honeydew ml-8 lg:text-2xl mt-5 lg:mt-10 lg:ml-12 lg:w-50">
       <span>Get in touch</span>
       <FontAwesomeIcon
         className="ml-4"

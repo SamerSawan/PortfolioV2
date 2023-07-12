@@ -10,7 +10,7 @@ const ButtonContainer = () => {
   };
 
   return (
-    <div className="space-x-12 ml-12">
+    <div className="ml-8 lg:space-x-12 lg:ml-12">
       <Button icon={faGithub} text={"GitHub"} onClick={handleClick} />
       <Link href="/resume" target="_blank">
         <Button icon={faFileAlt} text="Resume" />
