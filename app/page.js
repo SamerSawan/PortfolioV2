@@ -28,13 +28,13 @@ export default function Home() {
 
       {/*Hero + About*/}
       <div className="flex justify-center">
-        <div className="flex flex-col lg:flex-row lg:w-8/12 min-w-min items-center justify-center">
-          <div className="flex flex-col justify-center mt-20 lg:w-3/5">
+        <div className="flex flex-col lg:flex-row xl:w-8/12 min-w-min items-center justify-center">
+          <div className="flex flex-col justify-center mt-20 xl:w-3/5">
             <HeroText />
             <ButtonContainer />
             <CallToAction />
           </div>
-          <div className="bg-darkgreen text-honeydew text-sm lg:text-lg rounded-lg lg:w-150 py-3 px-6 mt-16">
+          <div className="bg-darkgreen text-honeydew text-sm lg:text-lg rounded-lg xl:w-150 py-3 px-6 mt-16">
             <p>
               My journey began in my senior year in high school where I built a
               simple brick breaker game using Unity and C#. Since then, I’ve
@@ -61,7 +61,7 @@ export default function Home() {
           Some languages and tools I like to use
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center lg:space-x-96 mt-10">
+      <div className="flex flex-col lg:flex-row justify-center lg:space-x-32 xl:space-x-96 mt-10">
         <div>
           <div className="ml-8 md:text-center md:ml-0 lg:text-xl lg:mr-12">
             <FontAwesomeIcon
@@ -72,14 +72,14 @@ export default function Home() {
             <span className="text-aquamarine ml-4">Languages</span>
           </div>
           <div className="flex justify-center md:ml-16 lg:ml-auto">
-          <div className="grid grid-cols-2 lg:grid-cols-3 my-5 md:w-1/2 lg:w-auto">
-            <Highlight text={"Java"} />
-            <Highlight text={"Python"} />
-            <Highlight text={"C"} />
-            <Highlight text={"JavaScript"} />
-            <Highlight text={"SQL"} />
-            <Highlight text={"OCaml"} />
-          </div>
+            <div className="grid grid-cols-2 lg:grid-cols-3 my-5 md:w-1/2 lg:w-auto">
+              <Highlight text={"Java"} />
+              <Highlight text={"Python"} />
+              <Highlight text={"C"} />
+              <Highlight text={"JavaScript"} />
+              <Highlight text={"SQL"} />
+              <Highlight text={"OCaml"} />
+            </div>
           </div>
         </div>
         <div>
@@ -92,17 +92,17 @@ export default function Home() {
             <span className="text-aquamarine ml-4">Tools and Tech</span>
           </div>
           <div className="flex justify-center md:ml-16 lg:ml-auto">
-          <div className="grid grid-cols-2 lg:grid-cols-3 mt-5 md:w-1/2 lg:w-auto">
-            <Highlight text={"React"} />
-            <Highlight text={"React Native"} />
-            <Highlight text={"JUnit"} />
-            <Highlight text={"Maven"} />
-            <Highlight text={"Spring Boot"} />
-            <Highlight text={"FireBase"} />
-            <Highlight text={"NextJS"} />
-            <Highlight text={"Git"} />
-            <Highlight text={"Docker"} />
-          </div>
+            <div className="grid grid-cols-2 lg:grid-cols-3 mt-5 md:w-1/2 lg:w-auto">
+              <Highlight text={"React"} />
+              <Highlight text={"React Native"} />
+              <Highlight text={"JUnit"} />
+              <Highlight text={"Maven"} />
+              <Highlight text={"Spring Boot"} />
+              <Highlight text={"FireBase"} />
+              <Highlight text={"NextJS"} />
+              <Highlight text={"Git"} />
+              <Highlight text={"Docker"} />
+            </div>
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col">
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 lg:grid-cols-3">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
             <ProjectCard
               text={"Splendor"}
               description={
@@ -147,10 +147,6 @@ export default function Home() {
               src={StatBot}
               position={" object-fill object-left"}
             />
-          </div>
-        </div>
-        <div className="flex justify-center">
-          <div className="grid grid-cols-1 lg:grid-cols-2">
             <ProjectCard
               text={"Twitter Scraper"}
               description={
@@ -177,7 +173,6 @@ export default function Home() {
       <div className="flex justify-center mt-20 text-honeydew">
         Created by Samer Sawan using Next.js and TailwindCSS
       </div>
-      
     </main>
   );
 }
