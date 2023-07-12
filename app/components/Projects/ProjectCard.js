@@ -5,7 +5,7 @@ import Tech from "./Tech";
 
 const ProjectCard = ({text, description, stack, src, position}) => {
   return (
-    <div className="bg-darkgreen w-full md:w-96 rounded-xl md:mx-10 mt-10 shadow-lg shadow-slate-600">
+    <div className="bg-darkgreen w-full md:w-96 rounded-xl md:mx-10 mt-10 shadow-lg shadow-aquamarine">
       <Image
         className={"rounded-t-xl md:h-56" + position}
         src={src}

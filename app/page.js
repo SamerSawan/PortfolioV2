@@ -63,7 +63,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col lg:flex-row justify-center lg:space-x-96 mt-10">
         <div>
-          <div className="text-center lg:text-xl lg:ml-28">
+          <div className="ml-8 md:text-center md:ml-0 lg:text-xl lg:mr-12">
             <FontAwesomeIcon
               icon={faCode}
               size="lg"
@@ -71,7 +71,8 @@ export default function Home() {
             />
             <span className="text-aquamarine ml-4">Languages</span>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-3 my-5">
+          <div className="flex justify-center md:ml-16 lg:ml-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-3 my-5 md:w-1/2 lg:w-auto">
             <Highlight text={"Java"} />
             <Highlight text={"Python"} />
             <Highlight text={"C"} />
@@ -79,9 +80,10 @@ export default function Home() {
             <Highlight text={"SQL"} />
             <Highlight text={"OCaml"} />
           </div>
+          </div>
         </div>
         <div>
-          <div className="text-center lg:text-xl lg:ml-28">
+          <div className="ml-8 md:text-center md:ml-0 lg:text-xl lg:mr-12">
             <FontAwesomeIcon
               icon={faServer}
               size="xl"
@@ -89,7 +91,8 @@ export default function Home() {
             />
             <span className="text-aquamarine ml-4">Tools and Tech</span>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-3 mt-5">
+          <div className="flex justify-center md:ml-16 lg:ml-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-3 mt-5 md:w-1/2 lg:w-auto">
             <Highlight text={"React"} />
             <Highlight text={"React Native"} />
             <Highlight text={"JUnit"} />
@@ -99,6 +102,7 @@ export default function Home() {
             <Highlight text={"NextJS"} />
             <Highlight text={"Git"} />
             <Highlight text={"Docker"} />
+          </div>
           </div>
         </div>
       </div>
