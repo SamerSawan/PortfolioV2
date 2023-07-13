@@ -1,4 +1,5 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Head from "next/head";
 import {
   Splendor,
   RecipeApp,
@@ -15,19 +16,28 @@ import Highlight from "./components/ui/Highlight";
 import Job from "./components/Experience/Job";
 import ProjectCard from "./components/Projects/ProjectCard";
 
+export const metadata = {
+  title: "Samer Sawan | Personal Website",
+  description: "Samer Sawan's personal website",
+  author: "Samer Sawan",
+  keywords: "Samer, Sawan, Samer Sawan",
+}
+
 export default function Home() {
   return (
+    <>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <main className="min-h-screen p-12 overflow-hidden">
       {/* Nav */}
       <div className="text-honeydew text-sm lg:text-base flex justify-end">
         {/*TODO: HAMBURGER MENU*/}
-        <span className="my-1 mx-3 lg:my-2 lg:mx-8">About</span>
-        <span className="my-1 mx-3 lg:my-2 lg:mx-8">Experience</span>
-        <span className="my-1 mx-3 lg:my-2 lg:mx-8">Projects</span>
+        <a href="#about" className="my-2 mx-8 hover:text-aquamarine">About</a>
+        <a href="#experience" className="my-2 mx-8 hover:text-aquamarine">Experience</a>
+        <a href="#projects" className="my-2 mx-8 hover:text-aquamarine">Projects</a>
       </div>
 
       {/*Hero + About*/}
-      <div className="flex justify-center">
+      <div id="about" className="flex justify-center">
         <div className="flex flex-col lg:flex-row xl:w-8/12 min-w-min items-center justify-center">
           <div className="flex flex-col justify-center mt-20 xl:w-3/5">
             <HeroText />
@@ -108,13 +118,13 @@ export default function Home() {
       </div>
 
       {/* Experience */}
-      <div className="flex justify-center text-emerald text-xl lg:text-4xl font-bold mt-24 lg:mt-52">
+      <div id="experience" className="flex justify-center text-emerald text-xl lg:text-4xl font-bold mt-24 lg:mt-52">
         Experience
       </div>
       <Job />
 
       {/* Projects */}
-      <div className="flex justify-center text-emerald text-xl lg:text-4xl font-bold mt-52">
+      <div id="projects" className="flex justify-center text-emerald text-xl lg:text-4xl font-bold mt-52">
         Projects
       </div>
       <div className="flex flex-col">
@@ -128,6 +138,7 @@ export default function Home() {
               stack={["Java", "JavaScript", "REST"]}
               src={Splendor}
               position={" object-none object-left"}
+              href={"https://www.mcgill.ca/deanofstudents/students/student-rights-responsibilities/code"}
             />
             <ProjectCard
               text={"Recipe App"}
@@ -136,7 +147,8 @@ export default function Home() {
               }
               stack={["ReactNative", "ReactContext", "FireBase"]}
               src={RecipeApp}
-              position={" object-none object-top"}
+              position={" object-fill object-top"}
+              href={"https://github.com/SamerSawan/RecipeApp"}
             />
             <ProjectCard
               text={"Stat Bot"}
@@ -146,6 +158,7 @@ export default function Home() {
               stack={["Java", "JavaScript", "REST"]}
               src={StatBot}
               position={" object-fill object-left"}
+              href={"https://github.com/SamerSawan/StatBot"}
             />
             <ProjectCard
               text={"Twitter Scraper"}
@@ -155,6 +168,7 @@ export default function Home() {
               stack={["Python", "Tweepy", "TwitterAPI"]}
               src={TwitterScraper}
               position={" object-fill object-left"}
+              href={"https://www.mcgill.ca/deanofstudents/students/student-rights-responsibilities/code"}
             />
             <ProjectCard
               text={"Portfolio V2"}
@@ -164,6 +178,7 @@ export default function Home() {
               stack={["Next.js", "TailwindCSS", "JavaScript"]}
               src={PortfolioV2}
               position={" object-fill object-left"}
+              href={"https://github.com/SamerSawan/PortfolioV2"}
             />
           </div>
         </div>
@@ -174,5 +189,6 @@ export default function Home() {
         Created by Samer Sawan using Next.js and TailwindCSS
       </div>
     </main>
+    </>
   );
 }

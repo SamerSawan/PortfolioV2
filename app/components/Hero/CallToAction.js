@@ -17,7 +17,7 @@ const CallToAction = () => {
         className="ml-4"
         icon={faArrowRight}
         style={{ color: "#dff1e5" }}
-        size="1xs"
+        size="xs"
       />
       <IconButton
         icon={faLinkedin}
