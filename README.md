@@ -1,1 +1,13 @@
-This is my personal website that I created with NextJS and TailwindCSS. Please feel free to reach out if you think there are any improvements I can make.
+# samersawan.com - v2
+The second iteration of my personal website, built with NextJS and TailwindCSS.
+![image](https://github.com/SamerSawan/PortfolioV2/assets/67536733/e1cf3510-addf-4bc1-bf2e-650ac77f939d)
+
+
+## Color Reference
+| Color | Hex |
+|---|---|
+| Honeydew | #DFF1E5 |
+| Aquamarine | #01FCC0 | 
+| Jade | #47A966 |
+| Dark Green | #0F2416 |
+| Emerald | #52B772 |
