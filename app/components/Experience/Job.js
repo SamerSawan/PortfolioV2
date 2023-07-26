@@ -1,6 +1,6 @@
 const Job = () => {
   return (
-    <div className="flex justify-center">
+    <div className="animate-fade flex justify-center">
       <div className="bg-darkgreen w-164 py-5 px-5 mt-10 rounded-lg">
         <div className="text-honeydew text-lg lg:text-2xl">
           Specialist @ <span className="text-aquamarine">Apple</span>
