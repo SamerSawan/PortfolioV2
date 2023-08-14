@@ -101,7 +101,7 @@ export default function Home() {
               <Highlight text={"React Native"} />
               <Highlight text={"JUnit"} />
               <Highlight text={"Maven"} />
-              <Highlight text={"Spring Boot"} />
+              <Highlight text={"AWS Lambda"} />
               <Highlight text={"FireBase"} />
               <Highlight text={"NextJS"} />
               <Highlight text={"Git"} />
