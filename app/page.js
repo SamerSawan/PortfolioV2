@@ -81,6 +81,8 @@ export default function Home() {
               <Highlight text={"JavaScript"} />
               <Highlight text={"SQL"} />
               <Highlight text={"OCaml"} />
+              <Highlight text={"GoLang"} />
+              <Highlight text={"TypeScript"} />
             </div>
           </div>
         </div>
