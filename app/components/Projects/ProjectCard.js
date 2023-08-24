@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import Tech from "./Tech";
 
-const ProjectCard = ({ text, description, stack, src, position, href }) => {
+const ProjectCard = ({ text, description, stack, src, position, href, alt }) => {
   const handleClick = () => {
     window.open(href, "_blank", "noreferrer");
   };
@@ -16,7 +16,7 @@ const ProjectCard = ({ text, description, stack, src, position, href }) => {
         src={src}
         width={500}
         height={500}
-        alt="Image of web game Splendor"
+        alt={alt}
       />
       <div className="flex justify-center text-aquamarine text-xl md:text-2xl font-semibold mt-2">
         {text}

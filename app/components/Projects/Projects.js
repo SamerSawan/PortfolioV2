@@ -20,6 +20,7 @@ const Projects = () => {
             stack={["Java", "JavaScript", "REST"]}
             src={Splendor}
             position={" object-none object-left"}
+            alt={"An image of Splendor, the web game."}
           />
           <ProjectCard
             text={"Recipe App"}
@@ -29,6 +30,7 @@ const Projects = () => {
             stack={["ReactNative", "ReactContext", "FireBase"]}
             src={RecipeApp}
             position={" object-fill object-top"}
+            alt={"An image of my Recipe App"}
           />
           <ProjectCard
             text={"Stat Bot"}
@@ -38,6 +40,7 @@ const Projects = () => {
             stack={["Java", "JavaScript", "REST"]}
             src={StatBot}
             position={" object-fill object-left"}
+            alt={"An image of my Stat Bot in action"}
           />
         </div>
       </div>
@@ -51,6 +54,7 @@ const Projects = () => {
             stack={["Python", "Tweepy", "TwitterAPI"]}
             src={TwitterScraper}
             position={" object-fill object-left"}
+            alt={"An image of my Twitter Scraper code"}
           />
           <ProjectCard
             text={"Portfolio V2"}
@@ -60,6 +64,7 @@ const Projects = () => {
             stack={["Next.js", "TailwindCSS", "JavaScript"]}
             src={PortfolioV2}
             position={" object-fill object-left"}
+            alt={"An image of my Portfolio"}
           />
         </div>
       </div>
