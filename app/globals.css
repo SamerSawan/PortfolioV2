@@ -6,6 +6,8 @@
   --foreground-rgb: #DFF1E5;
   --background-start-rgb: 9, 19, 24;
   --background-end-rgb: 9, 19, 24;
+  scroll-padding-top: 10px;
+  scroll-behavior: smooth;
 }
 
 body {

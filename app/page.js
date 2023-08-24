@@ -1,5 +1,4 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Head from "next/head";
 import {
   Splendor,
   RecipeApp,
@@ -16,13 +15,6 @@ import Highlight from "./components/ui/Highlight";
 import Job from "./components/Experience/Job";
 import ProjectCard from "./components/Projects/ProjectCard";
 
-export const metadata = {
-  title: "Samer Sawan | Personal Website",
-  description: "Samer Sawan's personal website",
-  author: "Samer Sawan",
-  keywords: "Samer, Sawan, Samer Sawan",
-}
-
 export default function Home() {
   return (
     <>
@@ -38,7 +30,7 @@ export default function Home() {
 
       {/*Hero + About*/}
       <div id="about" className="flex justify-center">
-        <div className="flex flex-col lg:flex-row xl:w-8/12 min-w-min items-center justify-center">
+        <div className="animate-fade flex flex-col lg:flex-row xl:w-8/12 min-w-min items-center justify-center">
           <div className="flex flex-col justify-center mt-20 xl:w-3/5">
             <HeroText />
             <ButtonContainer />
@@ -66,12 +58,12 @@ export default function Home() {
       </div>
 
       {/*Tools and Tech Title + highlights*/}
-      <div className="flex justify-center">
+      <div className="animate-fade flex justify-center">
         <div className="text-emerald text-xl lg:text-2xl mt-20 font-semibold">
           Some languages and tools I like to use
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center lg:space-x-32 xl:space-x-96 mt-10">
+      <div className="animate-fade flex flex-col lg:flex-row justify-center lg:space-x-32 xl:space-x-96 mt-10">
         <div>
           <div className="ml-8 md:text-center md:ml-0 lg:text-xl lg:mr-12">
             <FontAwesomeIcon
@@ -89,6 +81,8 @@ export default function Home() {
               <Highlight text={"JavaScript"} />
               <Highlight text={"SQL"} />
               <Highlight text={"OCaml"} />
+              <Highlight text={"GoLang"} />
+              <Highlight text={"TypeScript"} />
             </div>
           </div>
         </div>
@@ -107,7 +101,7 @@ export default function Home() {
               <Highlight text={"React Native"} />
               <Highlight text={"JUnit"} />
               <Highlight text={"Maven"} />
-              <Highlight text={"Spring Boot"} />
+              <Highlight text={"AWS Lambda"} />
               <Highlight text={"FireBase"} />
               <Highlight text={"NextJS"} />
               <Highlight text={"Git"} />
@@ -118,16 +112,16 @@ export default function Home() {
       </div>
 
       {/* Experience */}
-      <div id="experience" className="flex justify-center text-emerald text-xl lg:text-4xl font-bold mt-24 lg:mt-52">
+      <div id="experience" className="animate-fade flex justify-center text-emerald text-xl lg:text-4xl font-bold mt-24 lg:mt-52">
         Experience
       </div>
       <Job />
 
       {/* Projects */}
-      <div id="projects" className="flex justify-center text-emerald text-xl lg:text-4xl font-bold mt-52">
+      <div id="projects" className="animate-fade flex justify-center text-emerald text-xl lg:text-4xl font-bold mt-52">
         Projects
       </div>
-      <div className="flex flex-col">
+      <div className="animate-fade flex flex-col">
         <div className="flex justify-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
             <ProjectCard

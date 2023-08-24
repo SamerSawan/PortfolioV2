@@ -23,7 +23,19 @@ module.exports = {
         '128': '30.25rem',
         '150': '50rem',
         '164': '68rem'
-      }
+      },
+      // that is animation class
+      animation: {
+        fade: 'fadeIn 1s ease-in-out',
+      },
+
+      // that is actual animation
+      keyframes: theme => ({
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 100 },
+        },
+      }),
     },
   },
   plugins: [],
