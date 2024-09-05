@@ -1,4 +1,7 @@
 # samersawan.com - v2
+
+This is no longer the most recent version of my website
+
 The second iteration of my personal website, built with NextJS and TailwindCSS.
 ![image](https://github.com/SamerSawan/PortfolioV2/assets/67536733/e1cf3510-addf-4bc1-bf2e-650ac77f939d)
 
